@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: rgb(145, 164, 248);
+    color: rgb(3, 3, 80);
+    text-align: center;
+}
+
+#pri{
+    text-align: center;
+}
+
+h2{
+    background-color: lightgray;
+    color: rgb(3, 3, 80);
+    padding: 10px;
+    border-bottom:1px solid rgb(3, 3, 80);;
+}
+a{
+    text-decoration: none;
+}
+
+a:active, a:visited{
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
