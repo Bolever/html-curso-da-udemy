@@ -2,23 +2,51 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 h1{
     background-color: rgb(145, 164, 248);
     color: rgb(3, 3, 80);
     text-align: center;
+    font-size: 45px;
+    margin-bottom: 0;
 }
 
 #pri{
+    background-color: rgb(151, 192, 245);
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+nav{
+    display: block;
+    text-align: right;
+}
+
+nav a{
+    background-color: beige;
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+nav a:hover{
+    background-color: bisque;
+    text-decoration: none;
+    transition: .5s;
 }
 
 h2{
     background-color: lightgray;
     color: rgb(3, 3, 80);
     padding: 10px;
-    border-bottom:1px solid rgb(3, 3, 80);;
+    border-bottom:1px solid rgb(3, 3, 80);
+    margin-top: 48px;
+    margin-bottom: 12px;
 }
 a{
     text-decoration: none;
@@ -30,4 +58,12 @@ a:active, a:visited{
 
 a:hover{
     text-decoration: underline;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+li{
+    list-style: inside;
 }
