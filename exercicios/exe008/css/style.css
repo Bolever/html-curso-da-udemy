@@ -1,0 +1,173 @@
+@charset 'UTF-8';
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+
+/* Aqui é as variaveis */
+:root{
+    --cor-backgroundheader: #162028;
+    --cor-textomenu: #425564;
+    --cor-textos:#555;
+    --cor-fndimagemdetalhe: #003d52;
+    --cor-backfooter:#0b171f;
+    --cor-textfooter: #6f8597;
+
+    /* fontes */
+    --fonte-padrao: "Roboto", sans-serif;
+    --fonte-title: "Viaoda Libre", serif;
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+    font-family: var(--fonte-padrao);
+    
+}
+
+.header{
+    background-image: url(../imagens/topo.jpg);
+    background-color: #010204;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    height: 400px;
+
+    
+}
+ /* cabeçalho */
+.cabecalho{
+    
+    background: linear-gradient(to right,var(--cor-backgroundheader), #1d2124) ;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1{
+    font-family: var(--fonte-title);
+    font-size: 2em;
+    color: white;
+    padding-left: 5em;
+}
+
+.cabecalho ul{
+    display: flex;
+    gap: 2em;
+    padding-right: 4em;
+}
+
+.cabecalho li{
+    display: inline-block;
+    color: var(--cor-textomenu);
+}
+
+.cabecalho li a{
+    text-decoration: none;
+    color: #010405;
+    padding: 2px;
+    font-size: 1em;
+    transition: .6s;
+    text-transform: uppercase;
+    
+}
+.cabecalho li a:hover{
+    color: white;
+}
+
+/* main */
+
+.article{
+    
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.article h2{
+    font-family: var(--fonte-title);
+    font-size: 2em;
+    text-align: center;
+    padding: 3em 0 1em;
+}
+
+.article p{
+    text-indent: 2%;
+    padding: 5px;
+    line-height: 2em;
+}
+
+/* imagens */
+
+.imagens{
+    padding: 4em 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.imagens--imagem{
+    
+    flex: 1 1 60%;
+    text-align: center;
+}
+
+.imagens--imagem img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-strong{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* aside */
+
+aside{
+    background-image: url(../imagens/bg_detalhe.png);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.aside__title{
+    font-family: var(--fonte-title);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding-bottom: 2em;
+}
+
+.aside__p{
+    color: white;
+    width: 70%;
+    text-indent: 1em;
+    line-height: 2em;
+}
+
+footer{
+    background-color: var(--cor-backfooter);
+    color: var(--cor-textfooter);
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
