@@ -61,3 +61,20 @@ label{
     width: 100%;
 }
 
+.actions{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.btn{
+    background-color: rgb(241, 53, 6);
+    color: white;
+    cursor: pointer;
+}
+
+.btn2{    
+    background-color: rgb(22, 22, 136);
+    color: white;
+    cursor: pointer;
+}
