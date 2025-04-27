@@ -1,0 +1,97 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #171717;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    background-color: #0d100f;
+    padding: 1em;
+    width: 50vw;
+    max-width: 450px;
+}
+
+fieldset{
+    background-color: #0d100f;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    border: none;
+}
+
+legend{
+    text-align: center;
+    padding: 0 0 1em;
+    color: #aaa8a8;
+    font-size: 1.5em;
+}
+
+label{
+    padding: 8px 0;
+}
+
+input{
+    background-color: #0a0a0a;
+    font-size: 1.2em;
+    border: none;
+    padding: 4px;
+    color: white;
+    border-bottom: 2px solid gray;
+    outline: 0;
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom: 2px solid red;
+}
+
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid green;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 2px solid rgb(36, 35, 35);
+}
+
+textarea{
+    background-color: #292728;
+    color: white;
+    padding: 4px;
+    font-size: 1.3em;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid gray;
+    outline: 0;
+}
+
+button{
+    background-color: #292728;
+    color: white;
+    font-size: 1em;
+    padding: .6em;
+    border: none;
+    margin-top: 1em;
+    width: fit-content;
+    align-self: self-end;
+    cursor: pointer;
+}
