@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+/* -------------------------------Fontes--------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+/* -------------------------------root---------------------------------------- */
+:root{
+    --cor-principal: #3a68b7;
+
+    --font-principal:"Roboto", sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.main{
+    background-color: var(--cor-principal);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 50vw;
+    max-width: 450px;
+    padding: 1.7em .3em;
+    background-color: white;
+    box-shadow: -6px 0px 0px rgba(0, 0, 0, 0.199);
+}
+
+.form__fieldset{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: var(--font-principal);
+    border: none;
+}
+
+.form_fieldset__legend{
+    padding-bottom: .7em;
+    font-size: 1.7em;
+    font-weight: 300;
+    color: var(--cor-principal);
+}
+
+.form_fieldset__label{
+    padding: .5em 0;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.form_fieldset__input{
+    padding: .4em 0;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+    transition: .4s;
+}
+
+.form_fieldset__input:invalid:focus{
+    border-bottom: 1px solid rgba(148, 10, 10, 0.589);
+}
+
+.form_fieldset__input:valid:focus{
+    border-bottom: 1px solid rgba(6, 182, 50, 0.589);
+}
+
+.form_fieldset__input:focus{
+    padding-left: 10px;
+    outline: none;
+}
+
+
+.btn1{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.btn__action{
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+    background-color: var(--cor-principal);
+    border: none;
+}
+
+.btn2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+.btn2__login{
+    font-size: .8em;
+}

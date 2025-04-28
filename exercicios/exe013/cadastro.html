@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <form action="#" method="post" autocomplete="off" class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form_fieldset__legend">Cadastro</legend>
+
+                <label for="nome" class="form_fieldset__label">Nome</label>
+                <input class="form_fieldset__input" type="text" name="cnome" id="nome" required minlength="6">
+
+                <label for="senha" class="form_fieldset__label">Senha</label>
+                <input class="form_fieldset__input" type="password" name="csenha" id="senha" required minlength="6">
+
+                <label for="email" class="form_fieldset__label">Email</label>
+                <input class="form_fieldset__input" type="email" name="cemail" id="email">
+
+                <div class="btn2">
+                    <button type="submit" class="btn__action">Cadastrar</button>
+                    <p class="btn2__login">Já possui um cadastro?<a href="index.html">Faça login</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
