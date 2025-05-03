@@ -87,6 +87,10 @@ html, body{
     border: none;
 }
 
+.btn1 a{
+    text-decoration: none;
+}
+
 .btn2{
     display: flex;
     justify-content: space-between;
@@ -96,4 +100,9 @@ html, body{
 
 .btn2__login{
     font-size: .8em;
+}
+
+.btn2__login a{
+    text-decoration: none;
+    color: inherit;
 }
