@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+*{
+   
+    box-sizing: border-box;
+}
+
+a[href^="http"]::after{
+    content: url(imagens/newWindow-icon.png);
+}
+
+a[href$=".pdf"]::before{
+    content: url(imagens/pdf-icon.gif);
+}
+
+ol ul > li:nth-child(3){
+    background-color: lightgray;
+}
+
+ol ol > li:nth-child(3){
+    background-color: lightgray;
+}
+
+label{
+    color: red;
+}
+
+input[type="checkbox"]:checked + label{
+    color: green;
+}
+
+input:disabled + label{
+    color: blue !important;
+}
