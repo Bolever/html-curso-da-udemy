@@ -5,6 +5,11 @@
     --color-secundary: #31333b;
 }
 
+html{
+    /* pra deixar o rem com 10px */
+    font-size: 62.5%;
+}
+
 body{
     display: flex;
     height: 100vh;
@@ -12,18 +17,27 @@ body{
     color: #e7e7e7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ccc;
+    
+}
 
+.main-header, main{
+    font-size: 1.6rem;
 }
 
 .main-header{
-    width: 260px;
     background-color: var(--color-secundary);
+    flex: 0 0 26rem;
 }
 
 .main{
     background-color: #444856;
+    flex: 1 0;
 }
 
 a{
     color: inherit;
+}
+
+.perfil-img{
+    max-width: 10rem;
 }
