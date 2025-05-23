@@ -3,6 +3,7 @@
 :root{
     --color-primary: #ff7833;
     --color-secundary: #31333b;
+    --color-color-light: #444856;
 }
 
 html{
@@ -17,7 +18,26 @@ body{
     color: #e7e7e7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ccc;
-    
+    line-height: 1.7;
+}
+
+h1{
+    font-size: 4rem;
+    color: #a7a7a7;
+    margin-top: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+h2,h3,h4,h5,h6{
+    color: var(--color-primary);
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+article{
+    padding: 1px 0;
 }
 
 .main-header, main{
@@ -30,14 +50,46 @@ body{
 }
 
 .main{
-    background-color: #444856;
+    background-color: var(--color-color-light);
     flex: 1 0;
+    padding: 6.5rem 6rem 7.5rem
 }
 
 a{
     color: inherit;
 }
 
+
 .perfil-img{
     max-width: 10rem;
+    
+}
+
+.main-nav{
+    text-align: right;
+    padding: 6.5rem 2.4rem 2.4rem;
+}
+
+.main-nav ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-nav ul a{
+    display: block;
+    padding: 1.2rem 0;
+    text-decoration: none;
+    background-color: transparent;
+    transition: paddin-right .2s, background-color .4s;
+}
+
+.main-nav ul a:hover{
+    background-color: var(--color-color-light);
+    padding-right: 1rem;
+
+}
+
+.main-nav li{
+    border-bottom: 2px solid #7b7b7b;
+    padding: .4em 0;
 }
