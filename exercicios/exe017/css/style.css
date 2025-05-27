@@ -4,6 +4,7 @@
     --color-primary: #ff7833;
     --color-secundary: #31333b;
     --color-color-light: #444856;
+    --color-color-dark: #23252d
 }
 
 html{
@@ -30,6 +31,7 @@ h1{
 
 h2,h3,h4,h5,h6{
     color: var(--color-primary);
+    margin: 0;
 }
 
 h2{
@@ -39,12 +41,17 @@ h2{
 .highlight{
     border-left: 1px solid var(--color-primary);
     font-size: 1.1em;
-    padding-left: 2em;
+    /* padding-left: 2em; */
+    padding: 0 0 0 2em;
     margin-bottom: 2.2em;
 }
 
 article{
     padding: 1em 0;
+}
+
+section{
+    margin-bottom: 3rem;
 }
 
 .main-header, main{
@@ -90,13 +97,109 @@ a{
     transition: paddin-right .2s, background-color .4s;
 }
 
-.main-nav ul a:hover{
+.main-nav ul a:hover, 
+.main-nav ul a:focus{
     background-color: var(--color-color-light);
     padding-right: 1rem;
-
+    border-radius: 5px;
+    outline: 1px solid white;
+    outline-offset: 2px;
+    box-shadow: 0px 0px 8px 2px black;
 }
 
 .main-nav li{
     border-bottom: 2px solid #7b7b7b;
     padding: .4em 0;
+}
+
+.card{
+    max-width: 740px;
+    padding: 0;
+    background-color: var(--color-secundary);
+}
+
+.card_content{
+    padding: .5em 1em 1em;
+}
+
+.card_content p,
+.card_title{
+    margin: 0;
+}
+
+.card_title{
+    font-size: 1.75em;
+    margin-bottom: .25em;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.row{
+    display: flex;
+    gap: 3rem;
+    padding-top: 1.5em;
+    justify-content: space-between;
+}
+
+.row .row{
+    padding-top: 0;
+}
+
+.row > *{
+    flex: 1 0 0%;
+}
+
+.alternate{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alternate li{
+    padding: 0;
+}
+
+.alternate li:not(:last-child){
+    border-bottom: 2px solid;
+}
+
+.roman{
+    list-style-type: upper-roman;
+}
+
+.list-emoji{
+    list-style-type:"\1F608";
+}
+
+input,
+label,
+textarea,
+select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select{
+    background-color: #ccc;
+    padding: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    border: 0;
+}
+
+.btn{
+    background-color: var(--color-secundary);
+    border: 2px solid var(--color-color-dark);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: var(--color-color-dark);
 }
