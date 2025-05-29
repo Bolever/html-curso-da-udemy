@@ -55,9 +55,32 @@
                     <p>Email:teste@teste.com</p>
                 </address>
             </div>
+        </section>
 
+        <section>
+            <h2>Quiz</h2>
 
+            <form action="" class="for-quiz">
+                <label for="tecnoligia">Qual a sua linguagem preferida?</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecione</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Javascript</option>
+                </select>
 
+                <label>Baixa prioridade <input type="radio" name="prioridade" id="baixa"></label>
+                <label>Média prioridade <input type="radio" name="prioridade" id="media"></label>
+                <label>Alta prioridade <input type="radio" name="prioridade" id="alta"></label>
+
+                <label><input type="checkbox" name="copia" value="true"> Envie-me uma copia</label>
+                <label><input type="checkbox" name="human" value="true"> Sou um humano</label>
+
+                <div class="row">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" class="btn btn-stroke">
+                </div>
+            </form>
         </section>
         
     </main>

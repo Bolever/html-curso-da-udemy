@@ -4,7 +4,9 @@
     --color-primary: #ff7833;
     --color-secundary: #31333b;
     --color-color-light: #444856;
-    --color-color-dark: #23252d
+    --color-color-dark: #23252d;
+
+    --default-gap: 3rem;
 }
 
 html{
@@ -138,7 +140,7 @@ a{
 
 .row{
     display: flex;
-    gap: 3rem;
+    gap: var(--default-gap);
     padding-top: 1.5em;
     justify-content: space-between;
 }
@@ -191,6 +193,11 @@ select{
     border: 0;
 }
 
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
 .btn{
     background-color: var(--color-secundary);
     border: 2px solid var(--color-color-dark);
@@ -199,7 +206,15 @@ select{
     cursor: pointer;
 }
 
+.btn-stroke{
+    background-color: transparent;
+}
+
 .btn:hover,
 .btn:focus{
     background-color: var(--color-color-dark);
+}
+
+.for-quiz{
+    width: calc(50% - (var(--default-gap) / 2));
 }
