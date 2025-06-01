@@ -22,6 +22,10 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ccc;
     line-height: 1.7;
+    background-image: url(../imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -29,7 +33,10 @@ h1{
     color: #a7a7a7;
     margin-top: 2.4rem;
     margin-bottom: 3rem;
+    text-transform: capitalize;
 }
+
+
 
 h2,h3,h4,h5,h6{
     color: var(--color-primary);
@@ -61,14 +68,15 @@ section{
 }
 
 .main-header{
-    background-color: var(--color-secundary);
+    background-color: rgba(49, 51, 59, 0.801);
     flex: 0 0 26rem;
-}
+}   
 
 .main{
     background-color: var(--color-color-light);
+    background-color: rgba(68, 72, 86, .6);
     flex: 1 0;
-    padding: 6.5rem 6rem 7.5rem
+    padding: 6.5rem 6rem 7.5rem;
 }
 
 a{
@@ -84,6 +92,9 @@ a{
 .main-nav{
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .main-nav ul{
@@ -240,3 +251,56 @@ input[type="checkbox"]{
     width: calc(50% - (var(--default-gap) / 2));
 }
 
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th{
+    padding: 1.6rem;
+}
+
+.table td:last-child,
+.table th:last-child{
+    text-align: right;
+}
+
+.table:not(.tabble-alternate) td,
+.table:not(.tabble-alternate) th{
+    border-bottom:2px solid var(--color-secundary);
+}
+
+.table th{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.tabble-alternate tbody tr:nth-child(odd){
+    background-color: var(--color-color-dark)
+}
+
+.table-vertical-lines td:not(:last-child),
+.table-vertical-lines th:not(:last-child){
+    border-right: 1px solid var(--color-color-dark);
+}
+
+
+        .link-icon{
+            display: inline-block;
+            margin-right: 2rem;
+            text-decoration: none;
+        }
+
+        .link-icon i{
+            font-size: 3rem;
+            color: #ccc;
+            vertical-align:middle;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+        
+        .link-icon:hover,
+        .link-icon:hover i{
+            color: var(--color-primary);
+        }
