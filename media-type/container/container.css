@@ -25,6 +25,7 @@ body{
 .card_body{
     padding: 1em;
     background-color: #ccc;
+    flex-grow: 1;
 }
 
 .card_btn{
@@ -40,7 +41,16 @@ body{
     margin: 0 0 1em;
 }
 
-@media screen and (min-width: 50em) {
+.card_wrapper{
+    /* container-type: inline-size; */
+    container: cardWrapper / inline-size;
+}
+
+main{
+    container: main / inline-size;
+}
+
+@container (min-width: 50em) {
     .card{
         flex-direction: row;
     }
@@ -48,5 +58,21 @@ body{
     .card_header img{
         max-height: initial;
         
+    }
+}
+
+.cards_container{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 70em) {
+    .cards_container{
+        flex-direction: row;
+    }
+
+    .card_wrapper{
+        flex-grow: 1;
     }
 }
