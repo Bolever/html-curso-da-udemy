@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+
+    <img src="imagens/1280.jpg" alt="texto alternativo" srcset="imagens/960.jpg 960w, imagens/822.jpg 822w, imagens/640.jpg 640w, imagens/480.jpg 480w, imagens/320.jpg 320w" 
+    sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw">
+
+    <hr>
+
+    <picture>
+        <source media="(min-width: 900px)"
+         srcset="imagens/1280.jpg 1280w ,imagens/960.jpg 960w,imagens/822.jpg 822w" sizes="33vw">
+        <source media="(min-width: 400px)"
+         srcset="imagens/640.jpg 640w,imagens/480.jpg 480w, imagens/320.jpg 320w" sizes="50vw">
+
+        <img src="imagens/1280.jpg" alt="texto alternativo">
+    </picture>
+</body>
+</html>
