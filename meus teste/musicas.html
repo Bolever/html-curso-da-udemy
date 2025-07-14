@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+        }
+
+        main{
+            display: flex;
+            flex-flow: column-reverse;
+            gap: 1em;
+        }
+        .audio{
+            display: inline-block;
+            background-color: red;
+            padding: 1em;
+            border-radius: .3em;
+        }
+
+        .video{
+            display: flex;
+            background-color: rgba(0, 0, 255, 0.116);
+            justify-content: center;
+            border-radius: .3em;
+        }
+
+        /* .capa{
+           position: absolute; 
+           top: 0;
+           left: 0;
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+           pointer-events: none;
+        } */
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="audio">
+            <audio controls preload="metadata">
+                <source src="audio/musica1.mp3" type="audio/mp3">
+                seu navegador nao consegue abrir o arquivo
+            </audio>
+        </div>
+
+        <div class="video">
+            <video controls autoplay width="200" preload="metadata">
+                <source src="audio/video.mp4">
+            </video>
+            <!-- <img src="audio/imagem.jpg" alt="" class="capa"> -->
+        </div>
+    </main>
+</body>
+</html>
