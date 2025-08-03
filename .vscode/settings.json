@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "popovertarget"
-    ]
+    ],
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+    "files.autoSave": "afterDelay"
 }
