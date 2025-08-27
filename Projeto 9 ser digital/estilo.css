@@ -40,9 +40,13 @@ body {
 
 }
 
+.header-menu li{
+    padding: .25em 0;
+}
+
 .header-menu a {
     display: block;
-    padding: 2em 0;
+    padding: 1.75em 0;
 
 }
 
@@ -351,7 +355,7 @@ img {
     justify-content: space-between;
 }
 
-.header-men{
+.header-menu{
     position: absolute;
     left: 0;
     right: 0;
@@ -359,6 +363,23 @@ img {
     max-height: 0;
     overflow: hidden;
     background-color: white;
+
+    transition: max-height .4s;
+    margin: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.menu-btn:checked ~ .header-menu{
+    max-height: 100vh;
+}
+
+.menu-btn:checked+.menu-icon .nav-icon{
+    background-color: transparent;
+}
+
+.header-menu:focus-within{
+    max-height: 100vh;
 }
 
 @media screen and (min-width: 46.25em) {
@@ -368,7 +389,6 @@ img {
         background-color: initial;
     }
 }
-
 .header nav{
     display: flex;
     flex-direction: column;
@@ -378,7 +398,8 @@ img {
 .menu-icon {
     position: relative;
     cursor: pointer;
-    user-select: none;
+    height: 24px;
+    /* user-select: none; */
 }
 
 .nav-icon {
@@ -397,6 +418,7 @@ img {
     height: 2px;
     width: 24px;
     position: absolute;
+    transition: transform .4s;
 }
 
 .nav-icon::after {
@@ -405,4 +427,17 @@ img {
 
 .nav-icon::before {
     transform: translateY(-8px);
+}
+
+.menu-btn:checked+.menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked+.menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+}
+
+.menu-btn:focus + .menu-icon{
+    outline: 2px solid black;
+    outline-offset: 3px;
 }
