@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ola mundo!!</h1>
+
+    <script>
+        let n1 = parseInt(prompt('Digite um numero'))
+        let n2 = parseInt(prompt('Digite um segundo numero'))
+        let med = (n1 + n2) /2
+
+        /*
+        if(n1 <= 10 && n2 <= 10){
+             if((med > 4) && (n1 != 0) && (n2 != 0)){
+            alert('Aprovado!!')
+        }
+        else{
+            alert('Reprovado!!')
+        }
+        } else{
+            alert('Apenas numeros menores de 10')
+        }
+
+        */
+        /*
+        if((n1 < 0 || n2 < 0) || (n1 > 10 || n2 > 10) || (isNaN(n1) || isNaN(n2))){
+            alert('Apenas numeros de 0 a 10')
+        }else{
+            if((med > 4) && (n1 != 0) && (n2 != 0)){
+                alert('Aprovado!!')
+            }else{
+                alert('Reprovado')
+            }
+        }
+        */
+
+        if((n1 < 0 || n2 < 0) || (n1 > 10 || n2 > 10)){
+            alert('Apenas números de 0 a 10')
+        } else if (isNaN(n1) || isNaN(n2)){
+            alert('Digite apenas números')
+        } else{
+            if((med > 4) && (n1 != 0) && (n2 != 0)){
+                alert('Aprovado!!')
+            }else{
+                alert('Reprovado')
+            }
+        }
+           
+    </script>
+</body>
+</html>
