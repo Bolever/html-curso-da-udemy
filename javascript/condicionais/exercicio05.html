@@ -9,7 +9,33 @@
     <h1>Ola mundo!!</h1>
 
     <script>
-       let n = prompt('Digite um número de 0 a 6')
+       let n = parseInt(prompt('Digite um número de 0 a 6'))
+
+       switch (n){
+        case 0:
+            alert('Domingo')
+            break
+        case 1:
+            alert('Segunda-feira')
+            break
+        case 2:
+            alert('Terça-feira')
+            break
+        case 3: 
+            alert('Quarta-feira')
+            break
+        case 4:
+            alert('Quinta-feira')
+            break
+        case 5:
+            alert('Sexta-feira')
+            break
+        case 6:
+            alert('Sabado')
+            break
+        default:
+            alert('Apenas números de 0 a 6')
+       }
            
     </script>
 </body>
