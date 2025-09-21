@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loops - tabuada</h1>
+
+    <script>
+
+        let n = parseFloat(prompt('Digite o número que você gostaria de ver a tabuada'))
+       
+        if(isNaN(n)){
+            document.write('Apenas números por favor!!!')
+        }else{
+            for(let i = 0; i <= 1000; i++){
+                document.write(`${n} x ${i} : ${n * i} <br>`)
+                
+            }
+            document.write('Saiu do loop')
+        }
+
+
+    </script>
+</body>
+</html>

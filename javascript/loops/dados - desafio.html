@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loops - dados</h1>
+
+    <script>
+
+     let dado1 = Math.floor(Math.random() * 6 + 1)
+     let dado2 = Math.floor(Math.random() * 6 + 1)
+
+     let cont = 0
+
+    /* while(dado1 !== dado2){
+        console.log(dado1,dado2)
+        cont++
+        dado1 = Math.floor(Math.random() * 6 + 1)
+        dado2 = Math.floor(Math.random() * 6 + 1)
+     }
+        console.log(`o dados foram jogados ${cont} vezes . E o número repetido foi ${dado1}`)
+    */
+
+    do{
+        console.log(dado1,dado2)
+        cont++
+        dado1 = Math.floor(Math.random() * 6 + 1)
+        dado2 = Math.floor(Math.random() * 6 + 1)
+    }while(dado1 !== dado2)
+    console.log(`o dados foram jogados ${cont} vezes . E o número repetido foi ${dado1}`)
+    </script>
+</body>
+</html>
