@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio do dados</h1>
+
+    <script>
+
+    
+        let i = 0
+
+        for(let x = 0; x < 10; i++){
+
+            let n1 = Math.floor(Math.random() * 6) + 1
+            let n2 = Math.floor(Math.random() * 6) + 1
+            let res = n1 + n2
+            document.write(res +' -- ')
+
+            if(res >= 10){
+                x++
+            }
+        }
+
+        document.write(`<br>foram executadas ${i} vezes <br>`)
+
+    </script>
+</body>
+</html>
