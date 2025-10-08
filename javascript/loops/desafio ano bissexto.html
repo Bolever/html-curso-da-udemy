@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio do dados</h1>
+
+    <script>
+
+        for(let ano = 1004; ano <= 2025; ano++){
+            if(ano % 4 === 0 || ano % 400 === 0){
+                document.write(`${ano} <--- é um ano bissexto<br>`)
+            }else{
+                document.write(ano + '<br>')
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio do dados</h1>
+
+    <script>
+
+    let i = 0
+    let x = 1
+    while(x <= 10){
+        let n1 = Math.floor(Math.random() * 6 + 1)
+        let n2 = Math.floor(Math.random() * 6 + 1)
+        let res = n1 + n2
+        i++
+
+        if(res % 2 === 0){
+            if(n1 === n2){
+                document.write(`<hr>dados iguais ${n1}<hr>`)
+                continue
+            }else{
+                document.write(`dado valido ${res} <br>`)
+                x++
+            }
+        }
+    }
+    document.write('========================<br>')
+    document.write(`Os dados foram jogados ${i} vezes <br>`)
+    document.write('========================<br>')
+
+    </script>
+</body>
+</html>
